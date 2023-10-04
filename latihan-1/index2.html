@@ -6,6 +6,8 @@
     <title>Form</title>
   </head>
   <body>
+    <!-- V.1 -->
+    <h1>V.1</h1>
     <form action="">
       <table>
         <tr>
@@ -25,6 +27,9 @@
           <td>
             <select name="webServer">
               <option value="">--- Choose a server ---</option>
+              <option value="server1">Server 1</option>
+              <option value="server2">Server 2</option>
+              <option value="server3">Server 3</option>
             </select>
           </td>
         </tr>
@@ -54,6 +59,60 @@
         </tr>
         <tr>
           <td><input type="checkbox" name="selfservice" />Self-service</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="button" value="Login" />
+            <input type="button" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <!-- V.2 -->
+    <h1>V.2</h1>
+    <form action="">
+      <table>
+        <tr>
+          <td>Username</td>
+          <td><input type="text" name="username" /></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="password" /></td>
+        </tr>
+        <tr>
+          <td>City of Employment</td>
+          <td><input type="text" name="coe" /></td>
+        </tr>
+        <tr>
+          <td>Web server</td>
+          <td>
+            <select name="webServer">
+              <option value="">--- Choose a server ---</option>
+              <option value="server1">Server 1</option>
+              <option value="server2">Server 2</option>
+              <option value="server3">Server 3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Please specify your role</td>
+          <td>
+            <input type="radio" name="role" />Admin <br />
+            <input type="radio" name="role" />Engineer <br />
+            <input type="radio" name="role" />Manager <br />
+            <input type="radio" name="role" />Guest <br />
+          </td>
+        </tr>
+        <tr>
+          <td>Single Sign-on to the following</td>
+          <td>
+            <input type="checkbox" name="mail" />Mail <br />
+            <input type="checkbox" name="payroll" />Payroll <br />
+            <input type="checkbox" name="selfservice" />Self-service <br />
+          </td>
         </tr>
         <tr>
           <td></td>
