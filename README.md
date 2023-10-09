@@ -2,6 +2,12 @@
 
 Repo ini berisi tugas matakuliah pemrograman web dasar
 
-- Tugas 1 - Mencoba HTML
+#### Tugas Rumah
 
-- Tugas 2 - Membuat Website Pribadi dengan HTML CSS Layout
+- Latihan 1 - Mencoba HTML
+
+- Latihan 2 - Membuat website pribadi dengan HTML CSS layout
+
+#### Tugas Kampus
+
+- Tugas 1 - Membuat form di dalam table
