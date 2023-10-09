@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("img/leaves.webp");
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(70, 70, 70);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+  padding: 1em;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+}
+
+ul li a:hover {
+  background-color: rgb(129, 129, 129);
+}
+
+.hero {
+  height: 320px;
+  background-image: url(img/hero.jpg);
+  background-size: cover;
+  background-position: 0 -250px;
+  border-bottom: 5px solid lightskyblue;
+  border-top: 5px solid salmon;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  bottom: 50px;
+}
+
+.main {
+  /* width: 80%; */
+  display: flex;
+  /* justify-content: center; */
+  /* margin: auto; */
+  margin-top: 20px;
+  scroll-margin-top: 50px;
+}
+
+.sidebar {
+  width: 30%;
+  margin-left: 20px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+}
+
+.main-content {
+  width: 70%;
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+}
+
+.sidebar,
+.main-content {
+  padding: 20px;
+}
+
+.menu {
+  color: black;
+  text-decoration: none;
+}
+
+.menu:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: justify;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.footer p {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(70, 70, 70);
+  /* bottom: 0; */
+  color: white;
+  position: relative;
+  top: 50px;
+}
+
+.footer a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.services,
+.portfolio,
+.contact {
+  margin-top: 50px;
+  scroll-margin-top: 50px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.our-services,
+.box-portfolio,
+.box-contact {
+  margin-top: 10px;
+}
+
+.our-services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service img {
+  width: 400px;
+}
+
+.service p {
+  text-align: center;
+  max-width: 400px;
+  font-size: 1.5em;
+}
+
+.box-portfolio {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.box-portfolio img {
+  width: 400px;
+}
+
+.box-contact {
+  display: flex;
+  align-items: center;
+}
+
+.image-illustration img {
+  width: 400px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-left: 30px;
+  font-size: 1.8em;
+}
