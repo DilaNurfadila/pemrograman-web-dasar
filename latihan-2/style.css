@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -50,9 +51,13 @@ ul li a:hover {
   height: 100%;
 }
 
-.container {
+.container,
+.container-portfolio {
   width: 80%;
   margin: auto;
+}
+
+.container {
   position: relative;
   top: 50px;
   bottom: 50px;
@@ -106,10 +111,9 @@ p {
   padding: 20px;
   text-align: center;
   background-color: rgb(70, 70, 70);
-  /* bottom: 0; */
   color: white;
   position: relative;
-  top: 50px;
+  top: 100px;
 }
 
 .footer a {
@@ -122,17 +126,28 @@ p {
 }
 
 .services,
+.documentation,
 .portfolio,
-.contact {
-  margin-top: 50px;
+.contact,
+.website-register {
+  top: 50px;
+  position: relative;
   scroll-margin-top: 50px;
   background-color: white;
   padding: 50px;
   border-radius: 10px;
 }
 
+.documentation {
+  margin-top: 50px;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
 .our-services,
-.box-portfolio,
+.box-documentation,
 .box-contact {
   margin-top: 10px;
 }
@@ -154,14 +169,14 @@ p {
   font-size: 1.5em;
 }
 
-.box-portfolio {
+.box-documentation {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   row-gap: 20px;
 }
 
-.box-portfolio img {
+.box-documentation img {
   width: 400px;
 }
 
@@ -180,4 +195,17 @@ p {
   row-gap: 50px;
   margin-left: 30px;
   font-size: 1.8em;
+}
+
+#website-detail {
+  color: rgb(71, 129, 148);
+}
+
+#website-detail a {
+  text-decoration: none;
+  color: black;
+}
+
+#website-detail a:hover {
+  text-decoration: underline;
 }
