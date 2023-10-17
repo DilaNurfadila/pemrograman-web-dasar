@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .images {
+        display: flex;
+        width: 700px;
+        background-color: gray;
+        justify-content: space-between;
+      }
+
+      .image img {
+        width: 100px;
+        cursor: pointer;
+      }
+
+      .bigImg {
+        margin-top: 10px;
+      }
+
+      .changeColor {
+        cursor: pointer;
+      }
+
+      #suprise-text {
+        font-size: 300px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+    <title>Mencoba Javascript</title>
+  </head>
+  <body>
+    <h1>Mencoba Javascript</h1>
+
+    <h3>Teks di bawah ini akan berubah dengan menekan tombol "Click"</h3>
+    <div id="demo">Hello World!</div>
+    <button onclick="myFunction()">Click</button>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h3>Klik gambar di bawah ini dan lihat hasilnya</h3>
+    <div class="images">
+      <div class="image">
+        <img
+          src="img/p-1.jpg"
+          alt="img-1"
+          onclick="document.getElementById('heroImg').src = 'img/p-1.jpg'"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="img/p-2.jpg"
+          alt="img-2"
+          onclick="document.getElementById('heroImg').src = 'img/p-2.jpg'"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="img/p-3.jpg"
+          alt="img-3"
+          onclick="document.getElementById('heroImg').src = 'img/p-3.jpg'"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="img/p-4.jpg"
+          alt="img-4"
+          onclick="document.getElementById('heroImg').src = 'img/p-4.jpg'"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="img/p-5.jpg"
+          alt="img-5"
+          onclick="document.getElementById('heroImg').src = 'img/p-5.jpg'"
+        />
+      </div>
+    </div>
+
+    <div class="bigImg">
+      <img src="img/p-1.jpg" alt="img-1" id="heroImg" />
+    </div>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h3>Pilih warna teks yang anda inginkan dengan klik salah satu teksnya</h3>
+    <p onclick="blackFont()" class="changeColor">Hitam</p>
+    <p onclick="redFont()" class="changeColor">Merah</p>
+    <p onclick="greenFont()" class="changeColor">Hijau</p>
+    <p onclick="blueFont()" class="changeColor">Biru</p>
+    <p onclick="purpleFont()" class="changeColor">Ungu</p>
+    <p onclick="brownFont()" class="changeColor">Coklat</p>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h3>Klik tombol di bawah ini, anda akan diberi kejutan</h3>
+    <button id="btn-suprise" onclick="suprise()">Klik di sini</button>
+    <p id="suprise-text" style="display: none">SELAMAT!!!</p>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h3>Random Number</h3>
+    <p id="random">
+      Klik tombol di bawah untuk menampilkan angka acak dari 1 - 100
+    </p>
+    <button onclick="getRandomNum()">Acak</button>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h3>Mencetak halaman</h3>
+    <button onclick="print()">Cetak</button>
+
+    <script>
+      const myFunction = () => {
+        document.getElementById("demo").innerHTML = `Hello Javascript!`;
+      };
+
+      //   Change font color
+      const blackFont = () => {
+        document.querySelector("body").style.color = "black";
+      };
+
+      const redFont = () => {
+        document.querySelector("body").style.color = "Red";
+      };
+
+      const greenFont = () => {
+        document.querySelector("body").style.color = "green";
+      };
+
+      const blueFont = () => {
+        document.querySelector("body").style.color = "blue";
+      };
+
+      const purpleFont = () => {
+        document.querySelector("body").style.color = "purple";
+      };
+
+      const brownFont = () => {
+        document.querySelector("body").style.color = "brown";
+      };
+
+      //   Suprise
+      const suprise = () => {
+        document.getElementById("btn-suprise").style.display = "none";
+        document.getElementById("suprise-text").style.display = "block";
+      };
+
+      //   Get Random Number
+      const getRandomNum = () => {
+        const randNumText = document.getElementById("random");
+        const randNum = Math.floor(Math.random() * 100 + 1);
+
+        randNumText.innerText = randNum;
+      };
+    </script>
+  </body>
+</html>
