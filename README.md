@@ -8,6 +8,8 @@ Repo ini berisi tugas matakuliah pemrograman web dasar
 
 - Latihan 2 - Membuat website pribadi dengan HTML CSS layout
 
+- Latihan 3 - Mencoba Javascript
+
 #### Tugas Kampus
 
 - Tugas 1 - Membuat form di dalam table
