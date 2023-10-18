@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+  </head>
+  <body>
+    <h1>Kalkulator Sederhana V.2.</h1>
+
+    <table>
+      <tr>
+        <td>Angka 1</td>
+        <td colspan="4"><input type="number" id="a1" /></td>
+      </tr>
+      <tr>
+        <td>Angka 2</td>
+        <td colspan="4"><input type="number" id="a2" /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="button" value="+" onclick="hitung('tambah')" /></td>
+        <td><input type="button" value="-" onclick="hitung('kurang')" /></td>
+        <td><input type="button" value="x" onclick="hitung('kali')" /></td>
+        <td><input type="button" value="/" onclick="hitung('bagi')" /></td>
+      </tr>
+      <!-- <tr>
+          <td colspan="5"><input type="submit" value="Hitung" /></td>
+        </tr> -->
+      <tr>
+        <td>Hasil</td>
+        <!-- <td colspan="4">
+            <input type="text" id="result" disabled value="" />
+          </td> -->
+        <td id="result"></td>
+      </tr>
+    </table>
+
+    <script>
+      function hitung(operator) {
+        // Deklarasi
+        var a1 = document.getElementById("a1").value;
+        var a2 = document.getElementById("a2").value;
+        var hasil;
+
+        // Konversi ke angka
+        a1 = parseInt(a1);
+        a2 = parseInt(a2);
+
+        // Filter operator matematika
+        if (operator === "tambah") {
+          hasil = a1 + a2;
+        } else if (operator === "kurang") {
+          hasil = a1 - a2;
+        } else if (operator === "kali") {
+          hasil = a1 * a2;
+        } else {
+          hasil = a1 / a2;
+        }
+
+        // Menampilkan hasil
+        document.getElementById("result").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>
